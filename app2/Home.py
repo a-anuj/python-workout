@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas
-import send_email
+
 
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
@@ -17,7 +17,7 @@ with col2:
     st.info(content)
 
 with col1:
-    st.image(r"C:\Users\Anuj\Desktop\pythonprojects\app2\images\image_mine.jpg")
+    st.image(r"C:\Users\Anuj\Desktop\python-20app-course\app2\images\image_mine.jpg")
 
 write_content = """
 Below you can find some of the apps which I built. Feel free to contact me :)
