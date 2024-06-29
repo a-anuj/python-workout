@@ -11,9 +11,9 @@ for index, rows in df.iterrows():
     pdf.set_font(family="Times", size=28, style="B")
     pdf.set_text_color(48, 86, 121)
     pdf.cell(w=0, h=28, ln=1, txt=rows["Topic"], border=0, align="L")
-    # pdf.line(10,30,200,30)
-    for i in range(40, 298, 10):
-        pdf.line(10, i, 200, i)
+    pdf.line(10,30,200,30)
+    #for i in range(40, 298, 10):
+    #   pdf.line(10, i, 200, i)
 
     # Set the footer
     pdf.ln(245)
@@ -27,7 +27,7 @@ for index, rows in df.iterrows():
         pdf.set_text_color(48, 86, 121)
         pdf.set_font(family="Times", size=14, style="I")
         pdf.cell(w=0, h=10, ln=1, txt=rows["Topic"], border=0, align="R")
-        for i in range(20, 298, 10):
-            pdf.line(10, i, 200, i)
+        #for i in range(20, 298, 10):
+        #       pdf.line(10, i, 200, i)
 
-pdf.output("new-output-lined.pdf")
+pdf.output("output-normal.pdf")
